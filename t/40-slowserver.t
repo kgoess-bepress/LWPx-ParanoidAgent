@@ -1,7 +1,7 @@
 BEGIN {
     unless ($ENV{RELEASE_TESTING} || $ENV{THREAD_TESTS}) {
         require Test::More;
-        Test::More::plan(skip_all=>'these online tests require env variable ONLINE_TESTS be set to run');
+        Test::More::plan(skip_all=>'these online tests require env variable THREAD_TESTS be set to run');
     }
 }
 
